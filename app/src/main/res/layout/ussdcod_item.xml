@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="155dp"
+			app:cardCornerRadius="10dp"
+			android:scrollbars="vertical"
+			android:focusable="true"
+			app:cardElevation="5dp"
+			app:cardBackgroundColor="@color/white"
+			app:cardMaxElevation="6dp"
+			app:cardPreventCornerOverlap="true"
+			app:cardUseCompatPadding="true">
+		<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			<View
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:background="@color/black"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					android:id="@+id/view9" />
+			<TextView
+				android:text="@string/connect"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:textColor="@color/red"
+				android:textStyle="bold"
+				android:id="@+id/txtusitemcode"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintEnd_toStartOf="@+id/view9"
+				app:layout_constraintTop_toTopOf="@+id/view9"
+				app:layout_constraintBottom_toBottomOf="parent" />
+			<Button
+					android:text="@string/faollashtirish"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:id="@+id/btnusitemfaoll"
+					android:textColor="@color/white"
+					android:textSize="19sp"
+					android:background="@drawable/shadovmobiuz"
+					android:inputType="text"
+					tools:ignore="TextViewEdits"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintHorizontal_bias="0.471"
+					android:layout_marginBottom="10dp" app:layout_constraintEnd_toStartOf="@+id/guideline13"
+					app:layout_constraintStart_toStartOf="@+id/guideline14" />
+			<TextView
+					android:text="@string/connect"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:id="@+id/txtusitemname"
+					android:textAlignment="center"
+					android:textColor="@color/black"
+					android:textSize="18sp"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toTopOf="@+id/btnusitemfaoll"
+					app:layout_constraintEnd_toStartOf="@+id/guideline13"
+					app:layout_constraintStart_toStartOf="@+id/guideline14" />
+			<androidx.constraintlayout.widget.Guideline
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintGuide_percent="0.97"
+				android:id="@+id/guideline13" />
+			<androidx.constraintlayout.widget.Guideline
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:layout_constraintGuide_percent="0.53"
+				android:id="@+id/guideline14" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+</LinearLayout>

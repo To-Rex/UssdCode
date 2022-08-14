@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="360dp"
+		android:background="@drawable/shadovimgback"
+		android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.Guideline
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintGuide_percent="0.08"
+		android:id="@+id/guideline15" />
+	<androidx.constraintlayout.widget.Guideline
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintGuide_percent="0.92"
+		android:id="@+id/guideline16" />
+	<TextView
+		android:text="@string/connect"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:textColor="@color/black"
+		android:textStyle="bold"
+		android:id="@+id/txtdiussdname"
+		app:layout_constraintStart_toStartOf="@+id/guideline15"
+		app:layout_constraintTop_toTopOf="parent"
+		android:layout_marginTop="28dp" />
+	<TextView
+			android:text="@string/connect"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtdiussdmal"
+			android:textSize="18sp"
+			android:textColor="@color/black"
+			app:layout_constraintTop_toBottomOf="@+id/txtdiussdname"
+			android:layout_marginTop="6dp"
+			app:layout_constraintStart_toStartOf="@+id/guideline15"
+			app:layout_constraintEnd_toStartOf="@+id/guideline16" />
+	<Button
+			android:text="@string/yo_q"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtdiussdyoq"
+			android:textColor="@color/red"
+			style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+			app:layout_constraintEnd_toStartOf="@+id/txtdiussdxa"
+			app:layout_constraintTop_toTopOf="@+id/txtdiussdxa"
+			android:layout_marginEnd="10dp"
+			app:layout_constraintBottom_toBottomOf="@+id/txtdiussdxa" tools:ignore="NewApi" />
+	<Button
+			android:text="@string/xa"
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:textColor="@color/red"
+			style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+			android:id="@+id/txtdiussdxa"
+			app:layout_constraintEnd_toStartOf="@+id/guideline16"
+			app:layout_constraintTop_toBottomOf="@+id/txtdiussdmal"
+			android:layout_marginTop="16dp"
+			tools:ignore="NewApi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

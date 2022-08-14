@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">UssdCode</string>
+	<string name="connect">Connect</string>
+	<string name="tarif_rejalar">Tarif rejalar</string>
+	<string name="internet_to_plamlar">Internet to\'plamlar</string>
+	<string name="sms_to_plamlar">SMS to\'plamlar</string>
+	<string name="daqiqa_to_plamlar">Daqiqa to\'plamlar</string>
+	<string name="hizmatlar">Hizmatlar</string>
+	<string name="ussd_kodlar">USSD kodlar</string>
+	<string name="balans_tekshirish">Balans tekshirish</string>
+	<string name="raqamni_aniqlash">Raqamni aniqlash</string>
+	<string name="ulanish">Ulanish</string><string name="orqaga">Orqaga</string><string
+		name="batafsil">Batafsil</string><string name="narxi">Narxi:</string><string name="muddati">Muddati:</string><string
+		name="faollashtirish">Faollashtirish</string><string name="yo_q">Yo\'q</string><string name="xa">Xa</string>
+</resources>

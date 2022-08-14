@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+	<androidx.cardview.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="155dp"
+			app:cardCornerRadius="10dp"
+			android:scrollbars="vertical"
+			android:focusable="true"
+			app:cardElevation="5dp"
+			app:cardBackgroundColor="@color/white"
+			app:cardMaxElevation="6dp"
+			app:cardPreventCornerOverlap="true"
+			app:cardUseCompatPadding="true">
+		
+		<androidx.constraintlayout.widget.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/connect"
+					android:textColor="@color/red"
+					android:textSize="20sp"
+					app:layout_constraintTop_toTopOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					android:layout_marginStart="30dp"
+					android:id="@+id/txtttreja"/>
+			
+			<View
+					android:layout_width="2sp"
+					android:layout_height="match_parent"
+					android:background="#6C6868"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					android:id="@+id/view6"/>
+			
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/connect"
+					android:textColor="@color/black"
+					android:textSize="20sp"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toEndOf="@+id/view6"
+					app:layout_constraintBottom_toTopOf="@+id/btntulan"
+					app:layout_constraintTop_toTopOf="parent" android:id="@+id/txttcoin"/>
+			
+			<Button
+					android:layout_width="150dp"
+					android:layout_height="50dp"
+					android:text="@string/ulanish"
+					android:textSize="20sp"
+					android:inputType="text"
+					android:textColor="@color/white"
+					android:background="@drawable/shadovmobiuz"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					android:layout_marginBottom="16dp"
+					app:layout_constraintStart_toEndOf="@+id/view6" tools:ignore="TextViewEdits"
+					android:id="@+id/btntulan"/>
+			
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</androidx.cardview.widget.CardView>
+</LinearLayout>

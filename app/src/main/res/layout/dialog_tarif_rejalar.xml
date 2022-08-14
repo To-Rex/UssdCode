@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:background="@drawable/shadovimgback"
+		android:layout_width="360dp"
+		android:layout_height="match_parent">
+    <TextView
+		android:text="@string/connect"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="20sp"
+		android:id="@+id/txtditname"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:textColor="@color/black"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="@+id/guideline9"
+		android:layout_marginTop="30dp"
+		app:layout_constraintEnd_toStartOf="@+id/guideline10" />
+	<androidx.constraintlayout.widget.Guideline
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_constraintGuide_percent="0.08"
+			android:id="@+id/guideline9" />
+	<TextView
+			android:text="@string/connect"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtditinfo"
+			android:textSize="18sp"
+			android:textColor="@color/black"
+			app:layout_constraintStart_toStartOf="@+id/guideline9"
+			app:layout_constraintTop_toBottomOf="@+id/txtditname"
+			android:layout_marginTop="6dp" app:layout_constraintEnd_toStartOf="@+id/guideline10" />
+	<Button
+			android:text="@string/ulanish"
+			android:layout_width="83dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/btndiulan"
+			android:textColor="@color/red"
+			app:layout_constraintEnd_toStartOf="@+id/guideline10"
+			app:layout_constraintTop_toTopOf="@+id/btndiorqa"
+			style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+			tools:ignore="NewApi" />
+	<Button
+			android:text="@string/orqaga"
+			android:layout_width="81dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/btndiorqa"
+			android:textColor="@color/red"
+			app:layout_constraintEnd_toStartOf="@+id/btndiulan"
+			android:layout_marginEnd="10dp"
+			app:layout_constraintTop_toTopOf="@+id/btndibatafsil"
+			style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+			tools:ignore="NewApi" />
+	<Button
+		android:text="@string/batafsil"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/btndibatafsil"
+		android:textColor="@color/red"
+		app:layout_constraintStart_toStartOf="@+id/guideline9"
+		app:layout_constraintTop_toBottomOf="@+id/txtditinfo"
+		android:layout_marginTop="16dp"
+		style="@android:style/Widget.DeviceDefault.Button.Borderless.Colored"
+		tools:ignore="NewApi" />
+	<androidx.constraintlayout.widget.Guideline
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintGuide_percent="0.92"
+		android:id="@+id/guideline10" />
+</androidx.constraintlayout.widget.ConstraintLayout>
