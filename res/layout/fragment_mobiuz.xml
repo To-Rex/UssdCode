@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools">
+	
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent"
+			tools:ignore="UselessParent">
+		
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			
+			<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:layout_marginTop="0dp"
+					android:layout_marginBottom="0dp"
+					android:layout_marginLeft="0dp"
+					android:layout_marginRight="0dp"
+					tools:ignore="ObsoleteLayoutParam">
+				
+				<androidx.viewpager.widget.ViewPager
+						android:id="@+id/viewpagermobiuz"
+						android:layout_width="match_parent"
+						android:layout_height="400dp"
+						android:layout_centerHorizontal="true"
+						android:layout_marginTop="0dp"
+						android:layout_alignParentTop="true"/>
+				
+				<androidx.constraintlayout.widget.ConstraintLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+					
+					<Button
+							android:id="@+id/btnmob1"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textColor="@color/white"
+							android:textStyle="bold"
+							android:text="@string/tarif_rejalar"
+							android:textAlignment="textStart"
+							android:drawableLeft="@drawable/ic_sim_card"
+							android:paddingStart="10sp"
+							android:background="@drawable/shadovmobiuz"
+							android:layout_marginTop="16dp"
+							app:layout_constraintTop_toTopOf="parent"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry,TextViewEdits"
+							android:inputType="text"/>
+					
+					<Button
+							android:id="@+id/btnmob2"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:inputType="text"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:drawableLeft="@drawable/ic_internet"
+							android:paddingStart="10sp"
+							android:textStyle="bold"
+							android:text="@string/internet_to_plamlar"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob1"
+							android:background="@drawable/shadovmobiuz"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							android:layout_marginTop="20sp"
+							app:layout_constraintHorizontal_bias="0.504"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry,TextViewEdits"/>
+					
+					<Button
+							android:id="@+id/btnmob3"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:textStyle="bold"
+							android:drawableLeft="@drawable/ic_message"
+							android:paddingStart="10sp"
+							android:inputType="text"
+							android:text="@string/sms_to_plamlar"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob2"
+							android:background="@drawable/shadovmobiuz"
+							android:layout_marginTop="20sp"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry,TextViewEdits"/>
+					
+					<Button
+							android:id="@+id/btnmob4"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textStyle="bold"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:drawableLeft="@drawable/ic_alarm"
+							android:paddingStart="10sp"
+							android:layout_marginTop="20sp"
+							android:inputType="text"
+							android:background="@drawable/shadovmobiuz"
+							android:text="@string/daqiqa_to_plamlar"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob3"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry,TextViewEdits"/>
+					
+					<Button
+							android:id="@+id/btnmob5"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textStyle="bold"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:drawableLeft="@drawable/ic_menu"
+							android:paddingStart="10sp"
+							android:text="@string/hizmatlar"
+							style="@android:style/Widget.Button"
+							android:layout_marginTop="20sp"
+							android:background="@drawable/shadovmobiuz"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob4"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintHorizontal_bias="0.504"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry"/>
+					
+					<Button
+							android:id="@+id/btnmob6"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textStyle="bold"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:drawableLeft="@drawable/ic_dialpad"
+							android:paddingStart="10sp"
+							android:text="@string/ussd_kodlar"
+							style="@android:style/Widget.Button"
+							android:layout_marginTop="20sp"
+							android:background="@drawable/shadovmobiuz"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob5"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintHorizontal_bias="0.504"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry"/>
+					
+					<Button
+							android:id="@+id/btnmob7"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textStyle="bold"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:drawableLeft="@drawable/ic_balance"
+							android:paddingStart="10sp"
+							android:text="@string/balans_tekshirish"
+							android:layout_marginTop="20sp"
+							style="@android:style/Widget.Button"
+							android:background="@drawable/shadovmobiuz"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob6"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry"/>
+					
+					<Button
+							android:id="@+id/btnmob8"
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:textSize="25sp"
+							android:textStyle="bold"
+							android:textAlignment="textStart"
+							android:textColor="@color/white"
+							android:drawableLeft="@drawable/ic_phone"
+							android:paddingStart="10sp"
+							android:text="@string/raqamni_aniqlash"
+							android:layout_marginTop="20sp"
+							style="@android:style/Widget.Button"
+							android:background="@drawable/shadovmobiuz"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob7"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintHorizontal_bias="0.495"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							tools:ignore="RtlHardcoded,RtlSymmetry"/>
+					
+					<androidx.constraintlayout.widget.Guideline
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:id="@+id/guideline4"
+							app:layout_constraintGuide_percent="0.04"/>
+					
+					<androidx.constraintlayout.widget.Guideline
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							app:layout_constraintGuide_percent="0.96"
+							android:id="@+id/guideline5"/>
+					
+					<View
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:id="@+id/view"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							app:layout_constraintHorizontal_bias="0.0"
+							app:layout_constraintTop_toBottomOf="@+id/view2"/>
+					
+					<View
+							android:layout_width="0dp"
+							android:layout_height="55dp"
+							android:id="@+id/view2"
+							android:background="@drawable/shadovmobiuz"
+							app:layout_constraintStart_toStartOf="@+id/guideline4"
+							app:layout_constraintEnd_toStartOf="@+id/guideline5"
+							app:layout_constraintHorizontal_bias="1.0"
+							app:layout_constraintTop_toBottomOf="@+id/btnmob8"
+							android:layout_marginTop="20dp"/>
+					
+					<androidx.constraintlayout.widget.Guideline
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							app:layout_constraintGuide_percent="0.74"
+							android:id="@+id/guideline6"/>
+					
+					<View
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							android:background="@drawable/shadovimgback"
+							app:layout_constraintTop_toTopOf="@+id/imgmob1"
+							app:layout_constraintStart_toStartOf="@+id/imgmob1"
+							app:layout_constraintEnd_toEndOf="@+id/imgmob1"
+							app:layout_constraintBottom_toBottomOf="@+id/imgmob1"/>
+					
+					<View
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							android:background="@drawable/shadovimgback"
+							app:layout_constraintTop_toTopOf="@+id/imgmob1"
+							android:id="@+id/view5" app:layout_constraintBottom_toBottomOf="@+id/imgmob2"
+							app:layout_constraintEnd_toEndOf="@+id/imgmob2"
+							app:layout_constraintStart_toStartOf="@+id/imgmob2"/>
+					
+					<ImageView
+							android:layout_width="35dp"
+							android:layout_height="35dp"
+							app:srcCompat="@drawable/ic_instagram"
+							android:id="@+id/imgmob3"
+							app:layout_constraintBottom_toTopOf="@+id/view"
+							app:layout_constraintTop_toTopOf="@+id/view2"
+							app:layout_constraintEnd_toStartOf="@+id/guideline6"
+							app:layout_constraintStart_toStartOf="@+id/guideline6"
+							tools:ignore="ContentDescription"/>
+					
+					<ImageView
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							app:srcCompat="@drawable/ic_web"
+							android:id="@+id/imgmob2"
+							android:tint="@color/red"
+							app:layout_constraintBottom_toTopOf="@+id/view"
+							app:layout_constraintTop_toTopOf="@+id/view2"
+							app:layout_constraintEnd_toStartOf="@+id/guideline8"
+							app:layout_constraintStart_toStartOf="@+id/guideline8"
+							tools:ignore="ContentDescription"/>
+					
+					<ImageView
+							android:layout_width="20dp"
+							android:layout_height="20dp"
+							app:srcCompat="@drawable/ic_operator"
+							android:id="@+id/imgmob1"
+							android:tint="@color/red"
+							app:layout_constraintBottom_toTopOf="@+id/view"
+							app:layout_constraintTop_toTopOf="@+id/view2"
+							app:layout_constraintEnd_toStartOf="@+id/guideline7"
+							app:layout_constraintStart_toStartOf="@+id/guideline7"
+							tools:ignore="ContentDescription"/>
+					
+					<androidx.constraintlayout.widget.Guideline
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							app:layout_constraintGuide_percent="0.25"
+							android:id="@+id/guideline7"/>
+					
+					<androidx.constraintlayout.widget.Guideline
+							android:orientation="vertical"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							app:layout_constraintGuide_percent="0.5"
+							android:id="@+id/guideline8"/>
+					
+				</androidx.constraintlayout.widget.ConstraintLayout>
+			
+			</LinearLayout>
+		</ScrollView>
+	
+	</RelativeLayout>
+</FrameLayout>
